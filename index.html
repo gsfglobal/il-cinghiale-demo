@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Trattoria Il Cinghiale · Benevento</title>
+<meta name="description" content="Trattoria Il Cinghiale, Benevento: cucina contadina del Sannio, salumi, pappardelle e bistecca di cinghiale, nel centro storico in Via Annunziata 19.">
+<meta name="theme-color" content="#1c2418">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1c2418; --forest-2:#27311f; --moss:#5d6b3a; --bark:#2a1f17;
+  --rust:#a4492a; --rust-d:#843a21; --ochre:#d4a24c; --cream:#f2eadb; --paper:#f8f3ea;
+  --ink:#231c15; --ink-2:#55483b; --line:rgba(35,28,21,.13); --r:16px;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.04;letter-spacing:-.015em}
+.eyebrow{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--rust);font-weight:600;display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1.5px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rust{background:var(--rust);color:#fff}.btn-rust:hover{background:var(--rust-d)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.38);backdrop-filter:blur(6px)}
+
+.band{background:var(--bark);color:#e7d8bf;font-size:.76rem;text-align:center;padding:7px 12px;letter-spacing:.04em}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(248,243,234,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mono{width:42px;height:42px;border-radius:50%;background:var(--forest);display:grid;place-items:center;color:var(--ochre)}
+.mono svg{width:26px;height:26px}
+.logo b{font-family:var(--serif);font-size:1.32rem;font-weight:700;display:block;line-height:1}
+.logo small{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)}
+.links{display:flex;gap:26px;font-size:.9rem}
+.links a{text-decoration:none;color:var(--ink-2)}.links a:hover{color:var(--rust)}
+nav .btn{padding:10px 18px;font-size:.86rem}
+@media(max-width:880px){.links{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--forest)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;transform:scale(1.08);animation:kb 20s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,24,15,.9) 0%,rgba(18,24,15,.55) 45%,rgba(18,24,15,.15) 100%),linear-gradient(0deg,rgba(18,24,15,.75),transparent 45%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:72px;width:100%}
+.hero .eyebrow{color:var(--ochre)}
+.hero h1{font-size:clamp(3rem,8vw,6.2rem);margin:16px 0 20px;max-width:820px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--ochre);font-weight:500}
+.hero p.lead{font-size:clamp(1rem,1.6vw,1.18rem);max-width:540px;color:#eee3cf}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.scores{display:flex;gap:28px;margin-top:40px;flex-wrap:wrap;align-items:center}
+.score{display:flex;align-items:center;gap:10px;font-size:.86rem;color:#e6dac5}
+.score strong{font-family:var(--serif);font-size:2.1rem;color:#fff;font-weight:600}
+.stars{color:var(--ochre);letter-spacing:2px}
+.badge{border:1px solid rgba(212,162,76,.55);border-radius:999px;padding:8px 14px;font-size:.78rem;color:#f1dfb8;letter-spacing:.04em}
+
+/* ribbon */
+.ribbon{background:var(--forest);color:#e9dcc2;overflow:hidden;white-space:nowrap;padding:15px 0;font-family:var(--serif);font-size:1.3rem;font-style:italic;border-top:1px solid rgba(255,255,255,.06)}
+.ribbon div{display:inline-block;animation:mq 42s linear infinite}
+.ribbon span{margin:0 24px}.ribbon i{color:var(--ochre);font-style:normal;font-size:.9rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+.sec-head{max-width:660px;margin-bottom:52px}
+.sec-head h2{font-size:clamp(2.3rem,4.6vw,3.6rem);margin-top:14px}
+.sec-head p{color:var(--ink-2);margin-top:16px;font-size:1.05rem}
+
+/* oste */
+.about{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:center}
+.about .pics{position:relative;height:580px}
+.about .pics img{position:absolute;border-radius:var(--r);object-fit:cover;box-shadow:0 30px 60px -28px rgba(0,0,0,.4)}
+.about .p1{width:70%;height:80%;top:0;left:0}
+.about .p2{width:52%;height:54%;right:0;bottom:0;border:8px solid var(--paper)}
+.about .stamp{position:absolute;left:58%;top:6%;width:118px;height:118px;border-radius:50%;background:var(--rust);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--serif);font-size:.95rem;line-height:1.1;transform:rotate(-10deg);box-shadow:0 14px 30px -12px rgba(0,0,0,.45);z-index:2}
+.about .stamp b{display:block;font-size:2rem}
+.about h2{font-size:clamp(2.3rem,4.4vw,3.4rem);margin:14px 0 22px}
+.about p{color:var(--ink-2);margin-bottom:16px;font-size:1.04rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.fact{border-top:1px solid var(--line);padding-top:14px}
+.fact b{font-family:var(--serif);font-size:1.85rem;color:var(--rust);display:block;line-height:1.05}
+.fact span{font-size:.82rem;color:var(--ink-2)}
+.placeholder{background:#fbf0d4;border-left:3px solid var(--ochre);padding:10px 14px;font-size:.88rem;border-radius:6px;color:#6b5320}
+@media(max-width:900px){.about{grid-template-columns:1fr;gap:40px}.about .pics{height:440px}.about .stamp{width:96px;height:96px;font-size:.82rem}.about .stamp b{font-size:1.6rem}}
+
+/* il cinghiale in cinque modi */
+.feature{position:relative;color:#ece2cf;overflow:hidden;background:var(--forest)}
+.feature .bg{position:absolute;inset:0;background:url(img/bosco.webp) center/cover;opacity:.22;filter:grayscale(.3)}
+.feature .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--forest) 0%,rgba(28,36,24,.6) 40%,var(--forest) 100%)}
+.feature .wrap{position:relative}
+.feature .eyebrow{color:var(--ochre)}
+.feature h2{color:#fff}
+.feature .sec-head p{color:#c9bea9}
+.ways{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.way-list{list-style:none;counter-reset:w}
+.way-list li{counter-increment:w;display:grid;grid-template-columns:56px 1fr;gap:6px 14px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.1);cursor:pointer;transition:padding .3s}
+.way-list li::before{content:"0" counter(w);font-family:var(--serif);font-size:1rem;color:rgba(255,255,255,.35);grid-row:span 2;padding-top:6px}
+.way-list b{font-family:var(--serif);font-size:1.6rem;color:rgba(255,255,255,.55);font-weight:500;transition:color .3s}
+.way-list span{font-size:.9rem;color:#a99d86;grid-column:2;max-height:0;overflow:hidden;transition:max-height .4s}
+.way-list li.on{padding-left:8px}
+.way-list li.on b{color:#fff}
+.way-list li.on::before{color:var(--ochre)}
+.way-list li.on span{max-height:80px}
+.way-pic{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.way-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s,transform 1.2s}
+.way-pic img.on{opacity:1;transform:none}
+.way-pic small{position:absolute;right:14px;bottom:12px;font-size:.7rem;color:rgba(255,255,255,.7);z-index:2}
+@media(max-width:900px){.ways{grid-template-columns:1fr;gap:34px}.way-pic{aspect-ratio:4/3;order:-1}}
+
+/* menu */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:34px}
+.tab{padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:transparent;font:500 .92rem var(--sans);cursor:pointer;color:var(--ink-2)}
+.tab[aria-selected=true]{background:var(--forest);border-color:var(--forest);color:#fff}
+.panel{display:none;grid-template-columns:1fr 1fr;gap:0 60px}
+.panel.on{display:grid;animation:fade .5s}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.dish{display:flex;justify-content:space-between;gap:18px;padding:20px 0;border-bottom:1px dashed var(--line)}
+.dish h3{font-size:1.38rem;font-weight:600}
+.dish p{font-size:.9rem;color:var(--ink-2);margin-top:4px}
+.tag{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);font-weight:600;white-space:nowrap;padding-top:7px}
+.tag.hot{color:var(--rust)}
+.note{font-size:.82rem;color:var(--ink-2);margin-top:26px;font-style:italic}
+@media(max-width:760px){.panel.on{grid-template-columns:1fr}}
+
+/* domenica */
+.sunday{background:var(--cream);padding:0}
+.sunday .grid{display:grid;grid-template-columns:1fr 1fr;min-height:520px}
+.sunday .img{background:url(img/ragu.webp) center/cover}
+.sunday .txt{padding:90px 70px;display:flex;flex-direction:column;justify-content:center}
+.sunday h2{font-size:clamp(2.2rem,4.2vw,3.3rem);margin:14px 0 20px}
+.sunday p{color:var(--ink-2);font-size:1.04rem;margin-bottom:14px}
+.sunday ul{list-style:none;margin:12px 0 26px;display:grid;gap:10px}
+.sunday li{display:flex;gap:12px;align-items:baseline;color:var(--ink)}
+.sunday li::before{content:"✦";color:var(--rust);font-size:.8rem}
+@media(max-width:900px){.sunday .grid{grid-template-columns:1fr}.sunday .img{min-height:300px}.sunday .txt{padding:60px 22px}}
+
+/* gallery */
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin}
+.strip figure{flex:0 0 min(76vw,360px);scroll-snap-align:start;border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:3/4;min-width:0;background:var(--cream)}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.strip figure:hover img{transform:scale(1.05)}
+.strip figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-family:var(--serif);font-size:1.28rem}
+.arrows{display:flex;gap:10px;margin-top:20px}
+.arrows button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:1.1rem}
+
+/* reviews */
+.revs-top{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:end;margin-bottom:46px}
+.bars{display:grid;gap:12px}
+.bar{display:grid;grid-template-columns:120px 1fr 40px;gap:14px;align-items:center;font-size:.9rem;color:var(--ink-2)}
+.bar i{height:8px;border-radius:9px;background:var(--line);position:relative;overflow:hidden}
+.bar i::after{content:"";position:absolute;inset:0;width:var(--w);background:var(--rust);border-radius:9px;transform-origin:left;transform:scaleX(0);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.bars.in .bar i::after{transform:scaleX(1)}
+.bar b{font-family:var(--serif);color:var(--ink);text-align:right}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.rev .stars{color:var(--ochre);margin-bottom:12px}
+.rev h3{font-size:1.42rem;margin-bottom:10px}
+.rev p{color:var(--ink-2);font-size:.95rem}
+.rev small{display:block;margin-top:16px;font-size:.76rem;color:#8b7f73}
+@media(max-width:900px){.revs,.revs-top{grid-template-columns:1fr}.bar{grid-template-columns:96px 1fr 36px}}
+
+/* info */
+.info{background:var(--forest);color:#ece2cf}
+.info .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:34px}
+.card h2{color:#fff;font-size:2.4rem;margin-bottom:18px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.08);margin-bottom:20px}
+.dot{width:8px;height:8px;border-radius:50%;background:#999}
+.dot.open{background:#79c27c;box-shadow:0 0 0 4px rgba(121,194,124,.2)}.dot.closed{background:#d06a5c}
+table{width:100%;border-collapse:collapse;font-size:.94rem}
+td{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+td:last-child{text-align:right;color:#cbbfa9}
+tr.today td{color:var(--ochre);font-weight:600}
+.addr{font-size:1.06rem;margin-bottom:8px;color:#fff}
+.muted{color:#a99d86;font-size:.9rem}
+.info .btn{margin-top:22px}
+.map{margin-top:22px;border-radius:14px;height:180px;position:relative;overflow:hidden;background:
+  repeating-linear-gradient(32deg,rgba(255,255,255,.05) 0 2px,transparent 2px 40px),
+  repeating-linear-gradient(-58deg,rgba(255,255,255,.05) 0 2px,transparent 2px 54px),#151b12;display:flex;align-items:flex-end;padding:14px;font-size:.8rem;color:#a99d86}
+.map::before{content:"";position:absolute;left:50%;top:44%;width:14px;height:14px;margin:-7px;border-radius:50%;background:var(--rust);box-shadow:0 0 0 0 rgba(164,73,42,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{to{box-shadow:0 0 0 26px rgba(164,73,42,0)}}
+@media(max-width:900px){.info .grid{grid-template-columns:1fr}}
+
+/* booking */
+.book{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-size:.8rem;font-weight:600;color:var(--ink-2);display:flex;flex-direction:column;gap:6px}
+input,select,textarea{font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.full{grid-column:1/-1}
+.msg{grid-column:1/-1;font-size:.86rem;padding:10px 14px;border-radius:10px;display:none}
+.msg.err{display:block;background:#fbe6e3;color:#8a2a1f}
+.msg.ok{display:block;background:#e7f1e3;color:#2f5a2a}
+@media(max-width:900px){.book{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+footer{background:#12170f;color:#8b8371;padding:50px 0 120px;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer b{color:#ece2cf;font-family:var(--serif);font-size:1.3rem}
+
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:10px}
+.mbar a{flex:1;justify-content:center;box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}
+.mbar .call{background:#fff;color:var(--ink);border:1px solid var(--line)}
+@media(max-width:760px){.mbar{display:flex}.hero .wrap{padding-bottom:110px;padding-top:56px}.scores{gap:14px 22px;margin-top:30px}.score strong{font-size:1.7rem}.score{font-size:.8rem}.badge{font-size:.72rem}.hero{min-height:92vh}section{padding:80px 0}}
+
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.bar i::after{transform:none}}
+</style>
+</head>
+<body>
+
+<div class="band">Anteprima del nuovo sito · bozza riservata per la Trattoria Il Cinghiale · foto illustrative</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Trattoria Il Cinghiale, inizio pagina">
+      <span class="mono"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20c0-6 5-10 11-10s11 4 11 10"/><path d="M9 20c1.5 2.5 4 4 7 4s5.5-1.5 7-4"/><path d="M12 15.5h.01M20 15.5h.01"/><path d="M13 21c-1 1.5-2.5 2.2-4 2.2M19 21c1 1.5 2.5 2.2 4 2.2"/></svg></span>
+      <span><b>Il Cinghiale</b><small>Trattoria · Benevento</small></span>
+    </a>
+    <div class="links"><a href="#trattoria">La trattoria</a><a href="#cinghiale">Il cinghiale</a><a href="#menu">Menu</a><a href="#orari">Orari</a></div>
+    <a class="btn btn-rust" href="#prenota">Prenota</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <img src="img/hero.webp" alt="Tagliere di salumi, formaggi, pane e olive (foto illustrativa)">
+  <div class="wrap">
+    <span class="eyebrow">Cucina contadina del Sannio · Centro storico</span>
+    <h1>Il bosco del Sannio,<br><em>servito in tavola.</em></h1>
+    <p class="lead">Una piccola trattoria in Via Annunziata, dove Antonio cucina la tradizione beneventana con i prodotti del territorio: salumi tagliati al coltello, pasta fatta a mano e il cinghiale, in tutte le sue forme.</p>
+    <div class="cta">
+      <a class="btn btn-rust" href="#prenota">Prenota un tavolo</a>
+      <a class="btn btn-ghost" href="#menu">Scopri il menu</a>
+    </div>
+    <div class="scores">
+      <div class="score"><strong>4,8</strong><span><span class="stars">★★★★★</span><br>oltre 500 recensioni Tripadvisor</span></div>
+      <div class="score"><strong>4,7</strong><span><span class="stars">★★★★★</span><br>quasi 700 recensioni Google</span></div>
+      <span class="badge">N. 2 a Benevento · Travellers' Choice 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="ribbon" aria-hidden="true"><div>
+  <span>Pappardelle al ragù di cinghiale</span><i>✦</i><span>Salumi tagliati al coltello</span><i>✦</i><span>Fettuccine ai porcini</span><i>✦</i><span>Bistecca di cinghiale</span><i>✦</i><span>Agnolotti con ricotta</span><i>✦</i><span>Babà allo Strega</span><i>✦</i><span>Aglianico della casa</span><i>✦</i>
+  <span>Pappardelle al ragù di cinghiale</span><i>✦</i><span>Salumi tagliati al coltello</span><i>✦</i><span>Fettuccine ai porcini</span><i>✦</i><span>Bistecca di cinghiale</span><i>✦</i><span>Agnolotti con ricotta</span><i>✦</i><span>Babà allo Strega</span><i>✦</i><span>Aglianico della casa</span><i>✦</i>
+</div></div>
+
+<section id="trattoria">
+  <div class="wrap about">
+    <div class="pics rv">
+      <img class="p1" src="img/mani.webp" alt="Mani che lavorano la pasta fresca (foto illustrativa)">
+      <img class="p2" src="img/vino.webp" alt="Calice di vino rosso in tavola (foto illustrativa)">
+      <div class="stamp"><span><b>N.2</b>a Benevento<br>su Tripadvisor</span></div>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">La trattoria</span>
+      <h2>Pochi tavoli,<br>un oste, la cucina di casa.</h2>
+      <p>Il Cinghiale è un locale piccolo e raccolto in una stradina del centro storico, a due passi dal corso. Niente fronzoli: una sala sola, il profumo del sugo che arriva dalla cucina e Antonio che passa dai tavoli a raccontare cosa c'è oggi.</p>
+      <p>La cucina è quella contadina del Sannio, fatta da zero con prodotti del territorio: salumi, formaggi, pasta lavorata a mano, carni scelte. Il piatto che dà il nome alla trattoria è il cinghiale, cucinato come si faceva una volta.</p>
+      <p class="placeholder">✎ Spazio per la vostra storia: da quando siete aperti, chi c'è in cucina e in sala, da dove arrivano carni e salumi.</p>
+      <div class="facts">
+        <div class="fact"><b>Km 0</b><span>prodotti del Sannio</span></div>
+        <div class="fact"><b>Fatto a mano</b><span>pasta e dolci di casa</span></div>
+        <div class="fact"><b>€</b><span>prezzi da vera trattoria</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="cinghiale">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">La specialità</span>
+      <h2>Il cinghiale,<br>in cinque modi.</h2>
+      <p>È il piatto che gli ospiti ricordano di più, e quello che ha dato il nome alla trattoria. Scegliete come assaggiarlo.</p>
+    </div>
+    <div class="ways">
+      <ul class="way-list rv" id="ways">
+        <li class="on" data-i="0"><b>Salumi al coltello</b><span>Il prosciutto e gli insaccati di cinghiale, nell'antipasto della casa.</span></li>
+        <li data-i="1"><b>Pappardelle al ragù</b><span>Il primo più amato: sugo lento, carne tenera, pasta larga.</span></li>
+        <li data-i="2"><b>Agnolotti con ricotta</b><span>Pasta ripiena di ricotta, condita con il ragù di cinghiale.</span></li>
+        <li data-i="3"><b>Bistecca di cinghiale</b><span>Marinata e cotta sulla piastra, servita ben calda.</span></li>
+        <li data-i="4"><b>Salsiccia arrosto</b><span>Salsiccia di cinghiale alla brace, con i contorni di stagione.</span></li>
+      </ul>
+      <div class="way-pic rv" id="waypic">
+        <img class="on" src="img/hero.webp" alt="Tagliere di salumi (foto illustrativa)">
+        <img src="img/pappardelle.webp" alt="Pasta al ragù (foto illustrativa)" loading="lazy">
+        <img src="img/agnolotti.webp" alt="Pasta ripiena (foto illustrativa)" loading="lazy">
+        <img src="img/bistecca.webp" alt="Bistecca tagliata su tagliere (foto illustrativa)" loading="lazy">
+        <img src="img/brace.webp" alt="Carne sulla brace (foto illustrativa)" loading="lazy">
+        <small>Foto illustrative</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Il menu</span>
+      <h2>Cosa si mangia da Antonio</h2>
+      <p>I piatti che gli ospiti nominano più spesso. La carta segue le stagioni: chiedete sempre cosa c'è di giornata.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-p="p1">Antipasti</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p2">Primi</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p3">Secondi</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p4">Dolci e cantina</button>
+    </div>
+    <div class="panel on" id="p1">
+      <div class="dish"><div><h3>Antipasto della casa</h3><p>Salumi tagliati al coltello, formaggi del territorio e assaggi di cucina</p></div><span class="tag hot">Da condividere</span></div>
+      <div class="dish"><div><h3>Prosciutto di cinghiale</h3><p>Tagliato al momento</p></div><span class="tag hot">Firma</span></div>
+      <div class="dish"><div><h3>Montanare e pizza fritta ripiena</h3><p>Fritte al momento</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Frittatine</h3><p>Ricetta di casa</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Fegato con le cipolle</h3><p>Antipasto caldo della tradizione</p></div><span class="tag">Tradizione</span></div>
+      <div class="dish"><div><h3>Formaggi del Sannio</h3><p>Selezione del territorio</p></div><span class="tag"></span></div>
+    </div>
+    <div class="panel" id="p2">
+      <div class="dish"><div><h3>Pappardelle al ragù di cinghiale</h3><p>Il primo più richiesto</p></div><span class="tag hot">Il più amato</span></div>
+      <div class="dish"><div><h3>Fettuccine ai funghi porcini</h3><p>Anche in versione pappardelle</p></div><span class="tag">Di stagione</span></div>
+      <div class="dish"><div><h3>Agnolotti con ricotta</h3><p>Al ragù di cinghiale</p></div><span class="tag hot">Firma</span></div>
+      <div class="dish"><div><h3>Orecchiette con i broccoli</h3><p>Pasta fatta a mano</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Cannelloni</h3><p>Ricotta di bufala e carne</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Fusilli a mano al sugo di vitella</h3><p>Pasta lavorata a mano</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Zuppa di cardone</h3><p>Piatto delle feste beneventane</p></div><span class="tag">Di stagione</span></div>
+    </div>
+    <div class="panel" id="p3">
+      <div class="dish"><div><h3>Bistecca di cinghiale</h3><p>Marinata, cotta sulla piastra</p></div><span class="tag hot">Firma</span></div>
+      <div class="dish"><div><h3>Salsiccia di cinghiale arrosto</h3><p>Alla brace</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Maialino nero ai porcini</h3><p>Carne del territorio e funghi di bosco</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Bistecca marchigiana</h3><p>Taglio scelto</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Salsiccia di Castelpoto</h3><p>Il presidio sannita, piccante</p></div><span class="tag">Territorio</span></div>
+      <div class="dish"><div><h3>Cotechino sannita al sugo</h3><p>Con la polpetta, oppure con i fagioli</p></div><span class="tag">Tradizione</span></div>
+    </div>
+    <div class="panel" id="p4">
+      <div class="dish"><div><h3>Babà allo Strega</h3><p>Bagnato nel liquore di Benevento</p></div><span class="tag hot">Da non perdere</span></div>
+      <div class="dish"><div><h3>Torta alla crema chantilly</h3><p>Fatta in casa</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Sbrisolona alla ricotta di pecora</h3><p>Fatta in casa</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Ricotta e pere</h3><p>Fatta in casa</p></div><span class="tag"></span></div>
+      <div class="dish"><div><h3>Aglianico della casa</h3><p>Rosso del Sannio</p></div><span class="tag">Vino</span></div>
+      <div class="dish"><div><h3>Liquori fatti in casa e caffè con la moka</h3><p>Per chiudere come si deve</p></div><span class="tag">Della casa</span></div>
+    </div>
+    <p class="note">Menu indicativo, ricostruito dai piatti citati dagli ospiti. Prezzi, allergeni e opzioni senza glutine saranno inseriti con il menu ufficiale.</p>
+  </div>
+</section>
+
+<section class="sunday">
+  <div class="grid">
+    <div class="img" role="img" aria-label="Spezzatino al sugo in una ciotola (foto illustrativa)"></div>
+    <div class="txt rv">
+      <span class="eyebrow">Il pranzo della domenica</span>
+      <h2>Come a casa,<br>la domenica.</h2>
+      <p>La domenica a pranzo la trattoria si riempie di famiglie e di chi arriva apposta da fuori città. I tavoli sono pochi: meglio prenotare qualche giorno prima.</p>
+      <ul>
+        <li>Antipasto della casa da dividere</li>
+        <li>Pasta fatta a mano col sugo della domenica</li>
+        <li>Secondo di carne e dolce di casa</li>
+      </ul>
+      <a class="btn btn-rust" href="#prenota" style="align-self:flex-start">Prenota la domenica</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">In tavola</span><h2>Da guardare, poi da assaggiare</h2></div>
+    <div class="strip" id="strip">
+      <figure><img src="img/pappardelle.webp" alt="Pasta al ragù" loading="lazy"><figcaption>Pasta al ragù</figcaption></figure>
+      <figure><img src="img/hero.webp" alt="Tagliere di salumi" loading="lazy"><figcaption>I salumi</figcaption></figure>
+      <figure><img src="img/orecchiette.webp" alt="Orecchiette con verdure"><figcaption>Orecchiette e broccoli</figcaption></figure>
+      <figure><img src="img/bistecca.webp" alt="Bistecca tagliata"><figcaption>La carne</figcaption></figure>
+      <figure><img src="img/castagne.webp" alt="Castagne" loading="lazy"><figcaption>I sapori d'autunno</figcaption></figure>
+      <figure><img src="img/dolce.webp" alt="Dolci al cucchiaio" loading="lazy"><figcaption>I dolci di casa</figcaption></figure>
+      <figure><img src="img/pane.webp" alt="Pane e olio" loading="lazy"><figcaption>Pane e olio</figcaption></figure>
+    </div>
+    <div class="arrows"><button id="prev" aria-label="Foto precedente">←</button><button id="next" aria-label="Foto successiva">→</button></div>
+  </div>
+</section>
+
+<section style="background:var(--cream)">
+  <div class="wrap">
+    <div class="revs-top">
+      <div class="sec-head rv" style="margin:0"><span class="eyebrow">Dicono di noi</span><h2>Più di mille recensioni</h2><p>Cosa raccontano, in sintesi, gli ospiti su Google e Tripadvisor.</p></div>
+      <div class="bars rv" id="bars">
+        <div class="bar"><span>Cucina</span><i style="--w:96%"></i><b>4,8</b></div>
+        <div class="bar"><span>Qualità-prezzo</span><i style="--w:94%"></i><b>4,7</b></div>
+        <div class="bar"><span>Atmosfera</span><i style="--w:94%"></i><b>4,7</b></div>
+        <div class="bar"><span>Servizio</span><i style="--w:92%"></i><b>4,6</b></div>
+      </div>
+    </div>
+    <div class="revs">
+      <div class="rev rv"><div class="stars">★★★★★</div><h3>Il cinghiale</h3><p>Le pappardelle al ragù sono il piatto più citato. Molti tornano per i salumi di cinghiale e per la bistecca cotta sulla piastra.</p><small>Tema ricorrente · Google e Tripadvisor</small></div>
+      <div class="rev rv"><div class="stars">★★★★★</div><h3>Antonio, l'oste</h3><p>Gli ospiti raccontano un titolare gentile e appassionato, che consiglia i piatti e fa sentire a casa, anche chi arriva da lontano.</p><small>Tema ricorrente · Google e Tripadvisor</small></div>
+      <div class="rev rv"><div class="stars">★★★★★</div><h3>Una vera trattoria</h3><p>Porzioni generose, piatti genuini come la cucina di una volta e un conto onesto. Il consiglio di tutti: prenotate, i posti sono pochi.</p><small>Tema ricorrente · Google e Tripadvisor</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="orari">
+  <div class="wrap grid">
+    <div class="card rv">
+      <h2>Orari</h2>
+      <div class="status"><span class="dot" id="dot"></span><span id="stxt">…</span></div>
+      <table id="hours"></table>
+    </div>
+    <div class="card rv">
+      <h2>Dove siamo</h2>
+      <p class="addr">Via Annunziata 19 · 82100 Benevento</p>
+      <p class="muted">Nel centro storico, in una stradina un po' nascosta a pochi passi dal corso principale.</p>
+      <p class="addr" style="margin-top:18px"><a href="tel:+393396220906" style="text-decoration:none">+39 339 622 0906</a></p>
+      <div class="map">Mappa interattiva nel sito definitivo</div>
+      <a class="btn btn-rust" href="https://www.google.com/maps/search/?api=1&query=Trattoria+Il+Cinghiale+Via+Annunziata+19+Benevento">Apri in Google Maps →</a>
+    </div>
+  </div>
+</section>
+
+<section id="prenota">
+  <div class="wrap book">
+    <div class="rv">
+      <span class="eyebrow">Prenotazioni</span>
+      <h2 style="font-size:clamp(2.3rem,4.6vw,3.6rem);margin:14px 0 18px">Il vostro tavolo<br>vi aspetta.</h2>
+      <p style="color:var(--ink-2)">La sala è piccola: conviene prenotare, soprattutto la domenica e nel fine settimana. Compilate il modulo e la richiesta parte su WhatsApp. Vi rispondiamo noi per confermare.</p>
+      <p style="margin-top:18px;color:var(--ink-2)">Preferite chiamare? <b>+39 339 622 0906</b></p>
+    </div>
+    <form id="f" class="rv" novalidate>
+      <label>Nome<input name="nome" required autocomplete="name"></label>
+      <label>Persone<select name="pax"><option>2</option><option>1</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select></label>
+      <label>Giorno<input type="date" name="data" required></label>
+      <label>Turno<select name="turno"></select></label>
+      <label class="full">Note (allergie, senza glutine, occasioni speciali)<textarea name="note" rows="3"></textarea></label>
+      <div class="msg" id="msg"></div>
+      <button class="btn btn-rust full" type="submit" style="justify-content:center">Invia la richiesta su WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Trattoria Il Cinghiale</b><br>Via Annunziata 19, 82100 Benevento · +39 339 622 0906<br>P.IVA da inserire</div>
+    <div>Privacy · Cookie<br>Sito in anteprima</div>
+  </div>
+</footer>
+
+<div class="mbar"><a class="btn call" href="tel:+393396220906">Chiama</a><a class="btn btn-rust" href="#prenota">Prenota</a></div>
+
+<script>
+const PHONE='393396220906';
+// Orari dalla scheda Tripadvisor gestita dal titolare (da confermare). [apertura, chiusura] in minuti
+const L=[720,900],C=[1140,1350];
+const H={0:[L],1:[],2:[L,C],3:[L,C],4:[L,C],5:[L,C],6:[L,C]};
+const DN=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+const f=m=>String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
+const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Rome'}));
+const d=now.getDay(),mins=now.getHours()*60+now.getMinutes();
+let rows='';[1,2,3,4,5,6,0].forEach(k=>{rows+=`<tr class="${k===d?'today':''}"><td>${DN[k]}</td><td>${H[k].length?H[k].map(r=>f(r[0])+'–'+f(r[1])).join(' · '):'Chiuso'}</td></tr>`});
+document.getElementById('hours').innerHTML=rows;
+const open=H[d].some(r=>mins>=r[0]&&mins<r[1]);
+let nxt='';
+const later=H[d].find(r=>mins<r[0]);
+if(later)nxt='riapre alle '+f(later[0]);
+else{for(let i=1;i<=7;i++){const k=(d+i)%7;if(H[k].length){nxt='riapre '+(i===1?'domani':DN[k].toLowerCase())+' alle '+f(H[k][0][0]);break}}}
+document.getElementById('dot').className='dot '+(open?'open':'closed');
+document.getElementById('stxt').textContent=open?'Aperto ora':'Chiuso · '+nxt;
+
+// tabs
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected','false'));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
+  t.setAttribute('aria-selected','true');document.getElementById(t.dataset.p).classList.add('on');
+});
+
+// cinghiale in cinque modi
+const ways=[...document.querySelectorAll('#ways li')],pics=[...document.querySelectorAll('#waypic img')];
+let wi=0,auto;
+const show=i=>{wi=i;ways.forEach((w,j)=>w.classList.toggle('on',j===i));pics.forEach((p,j)=>p.classList.toggle('on',j===i))};
+ways.forEach((w,i)=>{w.addEventListener('mouseenter',()=>{clearInterval(auto);show(i)});w.addEventListener('click',()=>{clearInterval(auto);show(i)})});
+auto=setInterval(()=>show((wi+1)%ways.length),4200);
+
+// gallery
+const s=document.getElementById('strip');
+const step=dir=>s.scrollBy({left:dir*(s.querySelector('figure').offsetWidth+16),behavior:'smooth'});
+document.getElementById('prev').onclick=()=>step(-1);document.getElementById('next').onclick=()=>step(1);
+s.tabIndex=0;s.addEventListener('keydown',e=>{if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// booking -> WhatsApp
+const form=document.getElementById('f'),msg=document.getElementById('msg');
+const iso=x=>x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0');
+form.data.min=iso(now);
+const SL={pranzo:['Pranzo · 12:30','Pranzo · 13:00','Pranzo · 13:30','Pranzo · 14:00'],cena:['Cena · 19:30','Cena · 20:00','Cena · 20:30','Cena · 21:00','Cena · 21:30']};
+const fillTurni=()=>{
+  let day=form.data.value?new Date(form.data.value+'T12:00').getDay():null;
+  let opts=day===0?SL.pranzo:SL.pranzo.concat(SL.cena);
+  form.turno.innerHTML=opts.map(o=>`<option>${o}</option>`).join('');
+};
+fillTurni();
+form.data.addEventListener('change',()=>{
+  msg.className='msg';
+  if(form.data.value&&new Date(form.data.value+'T12:00').getDay()===1){msg.className='msg err';msg.textContent='Il lunedì siamo chiusi: scegliete un altro giorno.';}
+  fillTurni();
+});
+form.addEventListener('submit',e=>{
+  e.preventDefault();msg.className='msg';
+  if(!form.nome.value.trim()||!form.data.value){msg.className='msg err';msg.textContent='Inserite nome e giorno.';return}
+  const dt=new Date(form.data.value+'T12:00');
+  if(dt.getDay()===1){msg.className='msg err';msg.textContent='Il lunedì siamo chiusi: scegliete un altro giorno.';return}
+  const txt=`Buongiorno Antonio, vorrei prenotare un tavolo al Cinghiale.\nNome: ${form.nome.value.trim()}\nPersone: ${form.pax.value}\nGiorno: ${dt.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long'})}\nTurno: ${form.turno.value}`+(form.note.value.trim()?`\nNote: ${form.note.value.trim()}`:'');
+  const url='https://wa.me/'+PHONE+'?text='+encodeURIComponent(txt);
+  msg.className='msg ok';msg.innerHTML='Richiesta pronta. Se WhatsApp non si apre, <a href="'+url+'">toccate qui</a> oppure chiamate il +39 339 622 0906. La prenotazione è valida solo dopo la nostra conferma.';
+  try{window.open(url,'_blank')}catch(_){}
+});
+</script>
+</body>
+</html>
